@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nurullah Yücel Buldanlı</title>
+<meta name="description" content="Global Marka Elçisi ve Mentörü · Sosyal Medya Dijital İçerik Üreticisi">
+<meta property="og:title" content="Nurullah Yücel Buldanlı">
+<meta property="og:description" content="Global Marka Elçisi ve Mentörü · Sosyal Medya Dijital İçerik Üreticisi">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nybuldanli-beep.github.io/">
+<link rel="canonical" href="https://nybuldanli-beep.github.io/">
+<meta property="og:image" content="https://nybuldanli-beep.github.io/img/profil.jpg">
+<link rel="icon" href="img/profil.jpg">
+<link rel="apple-touch-icon" href="img/profil.jpg">
+<meta name="theme-color" content="#10262E">
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&amp;display=swap">
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap">
+<style>
+/* Linktree düzeni: sabit yumuşak arka plan görseli üzerinde cam kartlar. Görsel ve koyuluk panelden değişir. */
+:root {
+  color-scheme: dark;
+  --yazi: #FFFFFF; --baslik: #FFFFFF; --vurgu: #A5683A; --vurgu-yazi: #FFFFFF;
+  --dugme-yazi: #FFFFFF; --soluk: rgba(255, 255, 255, 0.78); --ayrac: rgba(255, 255, 255, 0.22);
+  --cizgi: rgba(255, 255, 255, 0.42); --cam: rgba(14, 28, 36, 0.36); --cam-ust: rgba(14, 28, 36, 0.54); --bulanik: blur(10px);
+  --kose: 14px; --kose-ic: 12px;
+  --golge: none;
+  --yazi-golge: 0 1px 8px rgba(0, 0, 0, .45);
+  --zemin: #10262E;
+  --govde: "Satoshi", "DM Sans", system-ui, sans-serif; --baslik-font: "Satoshi", "DM Sans", system-ui, sans-serif;
+  --yan: 18px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #10262E; color: var(--yazi); font: 500 15px/1.4 var(--govde); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+a:active, button:active { opacity: .78; }
+a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+img { display: block; max-width: 100%; }
+svg { display: block; flex: none; }
+
+.arka { position: fixed; inset: 0; z-index: -1; overflow: hidden; background: var(--zemin); }
+.arka img { width: 100%; height: 100%; object-fit: cover; object-position: 78% 50%; filter: blur(2px) saturate(.92); transform: scale(1.03); }
+.arka.gorsel::after { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(16, 38, 46, 0.18), rgba(16, 38, 46, 0.50)); }
+
+.sayfa {
+  position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 26px; max-width: 560px; margin-inline: auto;
+  padding-block: max(20px, env(safe-area-inset-top, 0px)) 44px;
+  padding-left: max(var(--yan), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--yan), env(safe-area-inset-right, 0px));
+}
+.ust { display: flex; align-items: center; justify-content: space-between; min-height: 42px; }
+.logo { width: 62px; height: auto; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .4)); }
+#paylas { display: grid; place-items: center; width: 44px; height: 44px; margin-left: auto; padding: 0; border: 1px solid var(--cizgi); border-radius: 12px; background: var(--cam-ust); color: var(--dugme-yazi); cursor: pointer; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+#paylas svg { width: 20px; height: 20px; }
+
+header { display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; justify-items: center; gap: 8px; margin-top: -6px; text-align: center; text-shadow: var(--yazi-golge); }
+.foto { width: 104px; height: 104px; border-radius: 50%; object-fit: cover; box-shadow: 0 6px 22px rgba(0, 0, 0, .35); }
+h1 { margin: 6px 0 0; color: var(--baslik); font-family: var(--baslik-font); font-size: 24px; font-weight: 700; line-height: 1.2; text-wrap: balance; max-width: 100%; overflow-wrap: anywhere; }
+header p { margin: 0; color: var(--yazi); max-width: min(44ch, 100%); text-wrap: balance; overflow-wrap: anywhere; }
+.sosyal { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 6px; }
+.sosyal a { display: block; padding: 7px; transition: transform .2s; }
+.sosyal svg { width: 30px; height: 30px; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .45)); }
+
+.iletisim { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.ilt { display: flex; align-items: center; gap: 8px; min-height: 66px; min-width: 0; padding: 10px; border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--cam); color: var(--dugme-yazi); font-weight: 700; line-height: 1.25; box-shadow: var(--golge); -webkit-backdrop-filter: var(--bulanik); backdrop-filter: var(--bulanik); transition: transform .2s, background .2s; }
+.ilt:first-child { background: var(--vurgu); border-color: var(--vurgu); color: var(--vurgu-yazi); }
+.ilt svg, .ilt img { width: 24px; height: 24px; object-fit: cover; border-radius: 6px; }
+.ilt span { min-width: 0; overflow-wrap: anywhere; }
+.ilt small { display: block; font-size: 12px; font-weight: 500; }
+
+section { display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; gap: 12px; }
+h2 { margin: 6px 0 0; color: var(--baslik); font-family: var(--baslik-font); font-size: 17px; font-weight: 700; text-align: center; overflow-wrap: anywhere; text-shadow: var(--yazi-golge); }
+.dugme, .kart, .video, .genis { border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--cam); color: var(--dugme-yazi); box-shadow: var(--golge); -webkit-backdrop-filter: var(--bulanik); backdrop-filter: var(--bulanik); transition: transform .2s, background .2s; }
+
+.dugme { position: relative; min-width: 0; display: flex; align-items: center; justify-content: center; min-height: 66px; padding: 10px 66px; text-align: center; text-wrap: balance; }
+.dugme img { position: absolute; left: 8px; top: 50%; width: 50px; height: 50px; transform: translateY(-50%); object-fit: cover; border-radius: var(--kose-ic); }
+.dugme span { min-width: 0; overflow-wrap: anywhere; }
+.dugme small { display: block; color: var(--soluk); font-size: 13px; font-weight: 400; }
+
+.izgara { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.kart { display: flex; flex-direction: column; min-width: 0; overflow: hidden; }
+.kart > img, .kart > .bos { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.kart > .bos { display: grid; place-items: center; background: var(--cam-ust); }
+.kart > .bos svg { width: 42px; height: 42px; }
+/* Tek kalan kart boşluk bırakmasın, tüm satırı kaplasın. */
+.kart:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.kart:last-child:nth-child(odd) > img, .kart:last-child:nth-child(odd) > .bos { aspect-ratio: 2.2; }
+.kunye { display: grid; gap: 2px; min-width: 0; padding: 10px 12px 12px; }
+.kunye b { font-weight: 500; overflow-wrap: anywhere; }
+.kunye small { display: flex; align-items: center; gap: 4px; min-width: 0; color: var(--soluk); font-size: 12.5px; font-weight: 400; }
+.kunye small span { min-width: 0; overflow-wrap: anywhere; }
+.kunye small svg { width: 14px; height: 14px; }
+
+.video { display: block; padding: 22px 12px 2px; text-align: center; }
+.video .kunye { justify-items: center; }
+.deste { position: relative; display: block; }
+.deste::before, .deste::after { content: ""; position: absolute; left: 4%; right: 4%; top: -7px; height: 40px; border-radius: var(--kose-ic); background: var(--ayrac); }
+.deste::after { left: 8%; right: 8%; top: -13px; opacity: .55; }
+.kare { position: relative; z-index: 1; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--kose-ic); background: var(--cam-ust); }
+.kare img { width: 100%; height: 100%; object-fit: cover; }
+.kare i { position: absolute; left: 50%; top: 50%; display: grid; place-items: center; width: 50px; height: 50px; transform: translate(-50%, -50%); border-radius: 50%; background: rgba(20, 20, 20, .62); color: #fff; }
+.kare i svg { width: 24px; height: 24px; }
+
+.genis { display: block; overflow: hidden; }
+.genis > img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.genis > .bos { display: grid; place-items: center; aspect-ratio: 3; background: var(--cam-ust); }
+.genis > .bos svg { width: 40px; height: 40px; }
+
+.minimal-liste { overflow: hidden; border: 1px solid var(--cizgi); border-radius: var(--kose); background: var(--cam); color: var(--dugme-yazi); box-shadow: var(--golge); -webkit-backdrop-filter: var(--bulanik); backdrop-filter: var(--bulanik); }
+.minimal { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 8px 14px; transition: background .2s; }
+.minimal + .minimal { border-top: 1px solid var(--ayrac); }
+.minimal > svg:first-child, .minimal > img { width: 22px; height: 22px; object-fit: cover; border-radius: 5px; }
+.minimal > span { flex: 1; min-width: 0; overflow-wrap: anywhere; line-height: 1.3; }
+.minimal small { display: block; color: var(--soluk); font-size: 12.5px; font-weight: 400; }
+.minimal .ok { width: 16px; height: 16px; color: var(--soluk); }
+
+.simge-liste { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; gap: 14px 10px; }
+.simge { display: grid; justify-items: center; gap: 6px; width: 76px; min-width: 0; font-size: 12.5px; line-height: 1.25; text-align: center; overflow-wrap: anywhere; text-shadow: var(--yazi-golge); }
+.daire { display: grid; place-items: center; width: 58px; height: 58px; overflow: hidden; border: 1px solid var(--cizgi); border-radius: 50%; background: var(--cam); color: var(--dugme-yazi); box-shadow: var(--golge); -webkit-backdrop-filter: var(--bulanik); backdrop-filter: var(--bulanik); transition: transform .2s; }
+.simge .ad { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.daire svg { width: 26px; height: 26px; }
+.daire img { width: 100%; height: 100%; object-fit: cover; }
+
+.pasif { opacity: .7; }
+.ust.yuzen { position: absolute; z-index: 2; left: max(var(--yan), env(safe-area-inset-left, 0px)); right: max(var(--yan), env(safe-area-inset-right, 0px)); top: max(20px, env(safe-area-inset-top, 0px)); }
+.baslik-logo { width: min(240px, 70%); margin-block: 4px;  }
+.hero { position: relative; margin: -20px calc(var(--yan) * -1) 0; }
+.hero-gorsel { width: 100%; aspect-ratio: 1; object-fit: cover; -webkit-mask-image: linear-gradient(#000 62%, transparent); mask-image: linear-gradient(#000 62%, transparent); }
+.hero-yazi { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 8px; margin-top: -76px; padding-inline: var(--yan); position: relative; }
+.banner { margin: -20px calc(var(--yan) * -1) 0; }
+.banner-gorsel { width: 100%; aspect-ratio: 2.1; object-fit: cover; background: var(--cam-ust); }
+.banner .foto { margin-top: -66px; position: relative; }
+.banner > :not(.banner-gorsel) { margin-inline: var(--yan); max-width: calc(100% - var(--yan) * 2); }
+/* Telefon ana görünüm. Geniş ekranda sayfa ortada kart olur, arkada duvar kağıdı kalır. */
+@media (min-width: 700px) {
+  :root { --yan: 28px; }
+  .arka::before { content: ""; position: absolute; inset: 0; z-index: 1; background: rgba(0, 0, 0, .2); }
+  .sayfa { max-width: 580px; margin-block: 32px; overflow: clip; border-radius: 28px; background: rgba(16, 38, 46, 0.3); box-shadow: 0 18px 60px rgba(0, 0, 0, .3); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  #qr { position: fixed; right: 24px; bottom: 24px; display: grid; justify-items: center; gap: 6px; padding: 10px; border-radius: 12px; background: #fff; color: #111; font-size: 12px; font-weight: 500; }
+}
+#cikis { position: fixed; z-index: 9; left: 12px; right: 12px; bottom: max(12px, env(safe-area-inset-bottom, 0px)); display: grid; gap: 10px; max-width: 460px; margin-inline: auto; padding: 16px; border-radius: 16px; background: #fff; color: #17181A; box-shadow: 0 12px 40px rgba(0, 0, 0, .4); font-size: 14px; }
+#cikis[hidden] { display: none; }
+#cikis-adres { padding: 8px 10px; border-radius: 8px; background: #F0F1F3; font-size: 13px; overflow-wrap: anywhere; user-select: all; -webkit-user-select: all; }
+#cikis div { display: flex; flex-wrap: wrap; gap: 8px; }
+#cikis button, #cikis a { display: grid; place-items: center; flex: 1 1 90px; min-height: 44px; padding: 0 10px; border: 1px solid #D5D6DA; border-radius: 10px; background: #fff; color: #17181A; font: inherit; font-weight: 500; cursor: pointer; }
+#cikis #cikis-kopyala { background: #17181A; border-color: #17181A; color: #fff; }
+#cikis a[hidden] { display: none; }
+footer { color: var(--yazi); font-size: 12.5px; text-align: center; opacity: .85; text-shadow: var(--yazi-golge); }
+#bildirim { position: fixed; left: 50%; bottom: max(20px, env(safe-area-inset-bottom, 0px)); z-index: 5; width: max-content; max-width: calc(100vw - 24px); padding: 9px 16px; transform: translateX(-50%); overflow-wrap: anywhere; text-align: center; border-radius: 22px; background: var(--vurgu); color: var(--vurgu-yazi); font-weight: 700; font-size: 14px; }
+@media (hover: hover) {
+  .sosyal a:hover, a.ilt:hover, a.simge:hover .daire { transform: translateY(-2px); }
+  a.dugme:hover, a.kart:hover, a.video:hover, a.genis:hover { background: var(--cam-ust); transform: translateY(-2px); }
+  a.minimal:hover { background: var(--cam-ust); }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="arka gorsel"><img src="img/g-d427679dc41d.jpg" alt=""></div>
+<main class="sayfa">
+  <div class="ust">
+    <img class="logo" src="img/logo.png" width="560" height="247" alt="NYB Films &amp; Studio">
+    <button id="paylas" type="button" aria-label="Sayfayı paylaş"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3.5M8 7l4-4 4 4"/><path d="M6 11H5v9.5h14V11h-1"/></svg></button>
+  </div>
+  <header><img class="foto" src="img/profil.jpg" alt="Nurullah Yücel Buldanlı"><h1>Nurullah Yücel Buldanlı</h1>
+    <p>Global Marka Elçisi ve Mentörü · Sosyal Medya Dijital İçerik Üreticisi</p>
+    <div class="sosyal"><a href="https://instagram.com/nurullah.buldanli" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a><a href="https://www.facebook.com/20nyb/" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 21v-8h3l.5-3.5h-3.5V7.4c0-1 .5-1.9 2-1.9H18V2.6A18 18 0 0015.6 2.4C13 2.4 11 4 11 7v2.5H8V13h3v8"/></svg></a></div></header>
+  <div class="iletisim"><a class="ilt" href="https://wa.me/905395204157"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>İletişime geç<small>WhatsApp</small></span></a><a class="ilt" href="mailto:nyb@nybfilms.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6.5L20.5 7"/></svg><span>Mail gönder<small>nyb@nybfilms.com</small></span></a></div>
+  <section>
+    
+    <div class="dugme pasif"><span>Bağımsız İş Projemiz - Şimdi Ekibimize Katıl</span></div>
+  </section>
+  <section>
+    <h2>Instagram Profillerim</h2>
+    <a class="dugme" href="https://www.instagram.com/nurullah.buldanli"><img src="img/ig-nurullah.jpg" alt=""><span>Nurullah Y. Buldanlı<small>nurullah.buldanli</small></span></a>
+    <a class="dugme" href="https://www.instagram.com/nyb.wedding/"><img src="img/ig-wedding.jpg" alt=""><span>NYB Wedding Story<small>nyb.wedding</small></span></a>
+    <a class="dugme" href="https://www.instagram.com/nybfilmsstudio/"><img src="img/ig-studio.jpg" alt=""><span>NYB Films-Studio<small>nybfilmsstudio</small></span></a>
+  </section>
+  <section>
+    <h2>YouTube Kanallarım</h2>
+    <div class="izgara"><a class="kart" href="https://www.youtube.com/@nybstudio"><img src="img/yt-studio.jpg" alt="" loading="lazy"><span class="kunye"><b>NYB Films-Studio</b><small><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><span>YouTube</span></small></span></a>
+    <a class="kart" href="https://www.youtube.com/c/NurullahBuldanl%C4%B1"><img src="img/yt-nurullah.jpg" alt="" loading="lazy"><span class="kunye"><b>Nurullah Yücel Buldanlı</b><small><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><span>YouTube</span></small></span></a></div>
+  </section>
+  <section>
+    <h2>Websitelerimiz</h2>
+    <a class="dugme" href="https://nurullahbuldanli.com"><span>Nurullah Buldanlı Websitem - Hayatınız Sizin Gelişiminiz Kadar Güzelleşir</span></a>
+    <a class="dugme" href="https://nybfilms.com"><span>NYB Films Websitemiz</span></a>
+    <a class="dugme" href="https://wedding.nybfilms.com"><span>NYB Wedding Web sitemiz</span></a>
+  </section>
+  
+</main>
+<div id="bildirim" hidden>Bağlantı kopyalandı</div>
+<div id="cikis" role="dialog" aria-label="Bağlantıyı dışarıda aç" hidden>
+  <span id="cikis-metin"></span>
+  <span id="cikis-adres"></span>
+  <div><button id="cikis-kopyala" type="button">Kopyala</button><a id="cikis-burada" href="#">Burada aç</a><button id="cikis-kapat" type="button">Kapat</button></div>
+</div>
+<script>
+// Yalnızca geniş ekranda: telefondan açmak için karekod.
+if (matchMedia('(min-width: 900px)').matches && location.protocol === 'https:') {
+  const k = document.createElement('script');
+  k.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+  k.integrity = 'sha384-3zSEDfvllQohrq0PHL1fOXJuC/jSOO34H46t6UQfobFOmxE5BpjjaIJY5F2/bMnU';
+  k.crossOrigin = 'anonymous';
+  k.onload = () => {
+    const q = document.createElement('div');
+    q.id = 'qr';
+    const a = document.createElement('div');
+    q.append(a, 'Telefonda aç');
+    document.body.append(q);
+    new QRCode(a, { text: location.href, width: 104, height: 104 });
+  };
+  document.head.append(k);
+}
+</script>
+<script>
+const bildir = (metin) => {
+  const b = document.getElementById('bildirim');
+  b.textContent = metin;
+  b.hidden = false;
+  setTimeout(() => { b.hidden = true; }, 2200);
+};
+async function kopyala(metin) {
+  try { await navigator.clipboard.writeText(metin); return true; } catch {}
+  const t = document.createElement('textarea');
+  t.value = metin;
+  t.readOnly = true;
+  t.style.cssText = 'position:fixed;opacity:0;font-size:16px';
+  document.body.append(t);
+  t.select();
+  t.setSelectionRange(0, metin.length);
+  let oldu = false;
+  try { oldu = document.execCommand('copy'); } catch {}
+  t.remove();
+  return oldu;
+}
+document.getElementById('paylas')?.addEventListener('click', async () => {
+  const url = location.href;
+  if (navigator.share) {
+    try { return await navigator.share({ title: document.title, url }); } catch (e) { if (e.name === 'AbortError') return; }
+  }
+  bildir(await kopyala(url) ? 'Bağlantı kopyalandı' : url);
+});
+
+function uygulamaAdresi(adres, instagramda) {
+  let u;
+  try { u = new URL(adres); } catch (e) { return null; }
+  const alan = u.hostname.replace(/^(www|m)\./, '').toLowerCase();
+  const ad = u.pathname.split('/').filter(Boolean)[0];
+  if (alan === 'wa.me' && ad) return 'whatsapp://send?phone=' + encodeURIComponent(ad) + (u.searchParams.get('text') ? '&text=' + encodeURIComponent(u.searchParams.get('text')) : '');
+  if (alan === 'api.whatsapp.com' && u.searchParams.get('phone')) return 'whatsapp://send?phone=' + encodeURIComponent(u.searchParams.get('phone'));
+  if (alan === 'youtube.com' || alan === 'youtu.be') return 'youtube://' + u.host + u.pathname + u.search;
+  if (alan === 'facebook.com') return 'fb://facewebmodal/f?href=' + encodeURIComponent(adres);
+  if (alan === 'instagram.com' && ad) return 'instagram://user?username=' + encodeURIComponent(ad);
+  return null;
+}
+// donus: Safari'de açılacak adres. Instagram uygulama adreslerini engellediği için önce Safari'ye çıkılır.
+function cikisHedefi(ua, adres, donus) {
+  if (!new RegExp('Instagram|FBAN|FBAV|FB_IAB|FBIOS|Barcelona|Threads', 'i').test(ua)) return null;
+  let u;
+  try { u = new URL(adres); } catch (e) { return null; }
+  if (u.protocol === 'mailto:' || u.protocol === 'tel:') return { tur: 'uygulama', adres: adres };
+  if (u.protocol !== 'https:' && u.protocol !== 'http:') return null;
+  const alan = u.hostname.replace(/^(www|m)\./, '').toLowerCase();
+  if (/Android/i.test(ua)) {
+    const paket = { 'youtube.com': 'com.google.android.youtube', 'youtu.be': 'com.google.android.youtube', 'wa.me': 'com.whatsapp', 'api.whatsapp.com': 'com.whatsapp', 'instagram.com': 'com.instagram.android', 'facebook.com': 'com.facebook.katana' }[alan] || 'com.android.chrome';
+    return { tur: 'git', adres: 'intent://' + u.host + u.pathname + u.search + '#Intent;scheme=' + u.protocol.slice(0, -1) + ';package=' + paket + ';S.browser_fallback_url=' + encodeURIComponent(adres) + ';end' };
+  }
+  if (/iPhone|iPad|iPod/i.test(ua)) {
+    const threads = /Barcelona|Threads/i.test(ua);
+    if (threads || /Instagram/i.test(ua)) return { tur: 'git', adres: (threads ? 'barcelona' : 'instagram') + '://extbrowser/?url=' + encodeURIComponent(donus || adres) };
+    const uygulama = uygulamaAdresi(adres);
+    return uygulama ? { tur: 'git', adres: uygulama } : null;
+  }
+  return null;
+}
+(function () {
+  const baglantilar = () => [...document.querySelectorAll('.sayfa a[href]')];
+  // Safari'ye gelen ?ac=N: sayfadaki N. bağlantıyı açar. Yalnızca sayfadaki bağlantılar açılabilir, dışarıdan adres alınmaz.
+  const ac = new URLSearchParams(location.search).get('ac');
+  if (ac !== null && /^[0-9]{1,3}$/.test(ac) && !cikisHedefi(navigator.userAgent, 'https://x.y/') && !new RegExp('Instagram|Barcelona|Threads|FBAN|FBAV', 'i').test(navigator.userAgent)) {
+    history.replaceState(null, '', location.pathname);
+    const hedef = baglantilar()[Number(ac)];
+    if (hedef && /^https?:/.test(hedef.href)) {
+      const uygulama = uygulamaAdresi(hedef.href);
+      if (uygulama) {
+        location.href = uygulama;
+        setTimeout(() => { if (!document.hidden) location.href = hedef.href; }, 1800);
+      } else {
+        location.href = hedef.href;
+      }
+    } else if (hedef) {
+      location.href = hedef.href;
+    }
+  }
+  let zaman = null;
+  const pencere = document.getElementById('cikis');
+  const iptal = () => { clearTimeout(zaman); zaman = null; };
+  const kapat = () => { pencere.hidden = true; };
+  const ayrildi = () => { iptal(); kapat(); };
+  document.addEventListener('visibilitychange', () => { if (document.hidden) ayrildi(); });
+  window.addEventListener('pagehide', ayrildi);
+  window.addEventListener('blur', iptal);
+  document.getElementById('cikis-kapat').onclick = kapat;
+  function goster(adres) {
+    const posta = adres.startsWith('mailto:') || adres.startsWith('tel:');
+    const yazi = posta ? adres.replace(/^(mailto|tel):/, '') : adres;
+    document.getElementById('cikis-metin').textContent = posta
+      ? 'Instagram bunu açamadı. Adresi kopyalayıp kullanabilirsin:'
+      : 'Instagram bağlantıyı burada tuttu. Üstteki ⋯ menüsünden dış tarayıcıda aç ya da bağlantıyı kopyala:';
+    document.getElementById('cikis-adres').textContent = yazi;
+    document.getElementById('cikis-kopyala').onclick = async (e) => { e.target.textContent = (await kopyala(yazi)) ? 'Kopyalandı' : 'Kopyalanamadı'; };
+    document.getElementById('cikis-kopyala').textContent = 'Kopyala';
+    const burada = document.getElementById('cikis-burada');
+    burada.hidden = posta;
+    burada.href = adres;
+    pencere.hidden = false;
+  }
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href]');
+    if (!a || a.closest('#cikis')) return;
+    const adres = a.href;
+    const sira = baglantilar().indexOf(a);
+    const donus = sira >= 0 ? location.origin + location.pathname + '?ac=' + sira : adres;
+    const h = cikisHedefi(navigator.userAgent, adres, donus);
+    if (!h) return;
+    if (h.tur === 'git') {
+      e.preventDefault();
+      location.href = h.adres;
+    }
+    iptal();
+    zaman = setTimeout(() => { if (!document.hidden) goster(adres); }, 3000);
+  });
+})();
+</script>
+</body>
+</html>
